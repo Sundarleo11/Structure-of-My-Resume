@@ -1,7 +1,9 @@
 body {
     margin: 0px;
+
 }
 
+/* Body Header for common syntex */
 #body-header {
     height: 65vh;
     opacity: 0.8;
@@ -9,4 +11,32 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+
+/* common text align */
+.text-center {
+    text-align: center;
+}
+
+/* Navation for horizonatal-list*/
+
+.horizonatal-list {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.horizonatal-list li {
+    display: inline-block;
+    padding: 0px 8px 8px 0px;
+}
+
+.horizonatal-list li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.4s, border-bottom 4s;
+}
+
+.horizonatal-list li a:hover {
+    color: lightgray;
+    border-bottom: 1px solid white;
 }
