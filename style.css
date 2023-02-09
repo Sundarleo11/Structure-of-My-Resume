@@ -75,6 +75,24 @@ body {
 }
 
 /* About section Image handler */
+
+section{
+    width: 100%;
+   display: flex;
+    /* height: 75vh; */
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+}
+
+section:nth-child(2n) {
+    background-color: #9e9b9b29;
+}
+
+section:nth-child(2n + 1) {
+    background-color: white;
+}
+
 #about{
     height: auto;
     width: 100%;
@@ -92,4 +110,23 @@ body {
     width: 75%;
     border-radius: 50%;
    
+}
+
+#about-para {
+    padding: 10px;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-weight: 100;
+    font-size: 1.1rem;
+}
+
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+
 }
