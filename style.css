@@ -78,12 +78,14 @@ body {
 
 section{
     width: 100%;
+    height: 75vh; 
    display: flex;
-    /* height: 75vh; */
+  
     flex-direction: column;
     align-items: center;
     /* text-align: center; */
 }
+
 
 section:nth-child(2n) {
     background-color: #9e9b9b29;
@@ -91,6 +93,22 @@ section:nth-child(2n) {
 
 section:nth-child(2n + 1) {
     background-color: white;
+}
+
+.section-heading {
+    width: auto;
+    padding: 20px 10px 10px;
+    margin: 10px auto;
+    font-weight: 400;
+}
+
+
+.section-heading span {
+    font-size: var(--section-heading-font-size);
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
 }
 
 #about{
@@ -106,9 +124,14 @@ section:nth-child(2n + 1) {
 }
 
 #my-image img{
-    height: 75%;
+    /*height: 75%;
     width: 75%;
+    border-radius: 50%;*/
+    height: 100%;
+    width: 100%;
     border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px 2px lightgrey;
    
 }
 
@@ -124,12 +147,16 @@ section:nth-child(2n + 1) {
     font-weight: 100;
     font-size: 1.1rem;
 }
+
 /*Skill display */
 
 .skills-display{
-    /* height: 100px; */
+    
     width: 70%;
-    /* border: 2px solid black; 	 */
+    /* border: 2px solid black; 
+    height: 100px; 	 */
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -138,35 +165,79 @@ section:nth-child(2n + 1) {
 .skill-progress{
     width: 7rem;
     height: 1.4rem;
+    margin: 20px;
     background-color: lightgrey;
     border-radius: 0.8rem;
-}
+    overflow: hidden;
+    box-shadow: inset 1px 1px 2px 1px #b9b9b9;
 
-.skill-name span {
+}
+.skill-name {
+    font-size: 15px;
     color: white;
-    font-size: 1rem;
-    margin-left: 10px;
+    padding: 6px 0 10px 20px;
+
 }
-.mb-blue {
-    background-color: #2857a4;
+.skill-name span {
+    margin: 0;
 }
 
-.mb-orange{
-    background-color: orange;
-}
 
-/*Percentage Classes */
+/*common color classes */
 
-.eighty-five-percent {
-    width: 85%;
-    height: inherit;
-}
-.seventy-five-percent{
-    width: 75%;
-    height: inherit;
-}
 .text-highlight {
     color: #2857a4;
     font-weight: 600;
 
+}
+
+.mb-blue {
+    background-color: #2857a4;
+}
+
+.mb-orange {
+    background-color: #ff5722;
+}
+
+
+.mb-teal {
+    background-color: #009688;
+}
+
+.mb-light-purple {
+    background-color: #93738c;
+}
+
+.m-blue {
+    color: #2857a4;
+}
+
+/*Common Percent classes*/
+.eighty-percent {
+    height: inherit;
+    width: 80%;
+}
+
+.eighty-five-percent {
+    height: inherit;
+    width: 80%;
+}
+
+.seventy-five-percent {
+    height: inherit;
+    width: 75%;
+}
+.sixty-percent {
+    height: inherit;
+    width: 60%;
+}
+
+.fifty-five-percent{
+    height: inherit;
+    width: 55%;
+}
+
+/* common margin classes */
+.m0 {
+    margin: 0;
 }
