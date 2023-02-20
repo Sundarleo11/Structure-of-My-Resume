@@ -78,7 +78,7 @@ body {
 
 section{
     width: 100%;
-    height: 120vh; /* section of box hight*/
+   /*s height: 120vh; /* section of box hight*/
    display: flex;
   
     flex-direction: column;
